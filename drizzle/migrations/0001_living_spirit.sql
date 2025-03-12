@@ -1,0 +1,1 @@
+ALTER TABLE "genres" RENAME COLUMN "group" TO "type";

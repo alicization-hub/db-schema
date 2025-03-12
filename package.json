@@ -1,0 +1,22 @@
+{
+  "name": "@alicization-hub/db-schema",
+  "version": "0.1.0",
+  "description": "Shared database schema using DrizzleORM",
+  "main": "drizzle/index.ts",
+  "types": "drizzle/types.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alicization-hub/db-schema.git"
+  },
+  "author": "Sucrose",
+  "license": "Apache-2.0",
+  "private": false,
+  "dependencies": {
+    "drizzle-orm": "^0.40.0"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  }
+}
