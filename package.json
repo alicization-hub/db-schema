@@ -1,6 +1,6 @@
 {
   "name": "@alicization-hub/db-schema",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Shared database schema using DrizzleORM",
   "main": "src/index.ts",
   "types": "dist/index.d.ts",
