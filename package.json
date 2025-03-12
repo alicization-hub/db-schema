@@ -1,9 +1,9 @@
 {
   "name": "@alicization-hub/db-schema",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Shared database schema using DrizzleORM",
-  "main": "drizzle/index.ts",
-  "types": "drizzle/types.ts",
+  "main": "drizzle/main.ts",
+  "types": "types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alicization-hub/db-schema.git"
