@@ -1,4 +1,3 @@
-import { type PgSelect } from 'drizzle-orm/pg-core';
 export declare const schema: Readonly<{
     titles: Omit<import("drizzle-orm/pg-core").PgTableWithColumns<{
         name: "titles";
@@ -1693,4 +1692,4 @@ export declare const schema: Readonly<{
         role: import("drizzle-orm").One<"roles", true>;
     }>;
 }>;
-export declare function withPagination<T extends PgSelect>(qb: T, page?: number, pageSize?: number): T;
+export { withPagination } from './utils';

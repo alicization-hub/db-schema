@@ -33,8 +33,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.schema = void 0;
-exports.withPagination = withPagination;
+exports.withPagination = exports.schema = void 0;
 const accounts = __importStar(require("./schema/accounts.schema"));
 const roles = __importStar(require("./schema/roles.schema"));
 const spaces = __importStar(require("./schema/spaces.schema"));
@@ -43,6 +42,5 @@ exports.schema = Object.freeze({
     ...roles,
     ...spaces
 });
-function withPagination(qb, page = 1, pageSize = 10) {
-    return qb.limit(pageSize).offset((page - 1) * pageSize);
-}
+var utils_1 = require("./utils");
+Object.defineProperty(exports, "withPagination", { enumerable: true, get: function () { return utils_1.withPagination; } });
