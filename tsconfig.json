@@ -2,7 +2,6 @@
   "compilerOptions": {
     "allowJs": true,
     "declaration": true,
-    "emitDeclarationOnly": true,
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "outDir": "dist",
