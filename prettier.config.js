@@ -5,17 +5,7 @@
 module.exports = {
   bracketSameLine: true,
   endOfLine: 'lf',
-  importOrder: [
-    '<BUILTIN_MODULES>',
-    '',
-    '<THIRD_PARTY_MODULES>',
-    '',
-    '^(?!(.*)[.]css$)(@/)(.*)$',
-    '',
-    '^(?!(.*)[.]css$)[./](.*)$',
-    '',
-    '.css$'
-  ],
+  importOrder: ['<BUILTIN_MODULES>', '', '<THIRD_PARTY_MODULES>'],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
   plugins: ['@ianvs/prettier-plugin-sort-imports'],

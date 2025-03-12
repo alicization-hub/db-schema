@@ -1,4 +1,4 @@
-import { schema } from './main'
+import { schema } from '.'
 
 export type Account = typeof schema.accounts.$inferSelect
 export type Profile = typeof schema.profiles.$inferSelect
