@@ -1,3 +1,5 @@
+export {}
+
 declare namespace Role {
   export type Tiers = 'root' | 'admin' | 'assistant' | 'operater' | 'user' | 'guest'
 }

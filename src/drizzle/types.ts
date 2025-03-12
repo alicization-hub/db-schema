@@ -1,14 +1,4 @@
-import * as accounts from './schema/accounts.schema'
-import * as roles from './schema/roles.schema'
-import * as spaces from './schema/spaces.schema'
-
-export { withPagination } from './utils'
-
-export const schema = Object.freeze({
-  ...accounts,
-  ...roles,
-  ...spaces
-})
+import { schema } from './main'
 
 export type Account = typeof schema.accounts.$inferSelect
 export type Profile = typeof schema.profiles.$inferSelect
