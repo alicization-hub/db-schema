@@ -18,9 +18,12 @@
     "type": "git",
     "url": "git+https://github.com/alicization-hub/db-schema.git"
   },
-  "author": "Sucrose",
+  "author": {
+    "name": "Sucrose",
+    "email": "pinn.project@outlook.com"
+  },
   "license": "Apache-2.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "drizzle-orm": "^0.40.0"
   },
