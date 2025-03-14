@@ -23,7 +23,11 @@
     "email": "pinn.project@outlook.com"
   },
   "license": "Apache-2.0",
-  "private": true,
+  "private": false,
+  "scripts": {
+    "build": "tsc && cp src/global.d.ts dist/global.d.ts",
+    "prepublishOnly": "npm run build"
+  },
   "dependencies": {
     "drizzle-orm": "^0.40.0"
   },
