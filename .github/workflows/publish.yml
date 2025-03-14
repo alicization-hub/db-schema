@@ -28,7 +28,9 @@ jobs:
         run: npx tsc
 
       - name: Copy global.d.ts to dist
-        run: cp src/global.d.ts dist/global.d.ts
+        run: |
+          if [ "$RUNNER_OS" == "Windows" ]; then copy src\global.d.ts dist\global.d.ts; else cp src/global.d.ts dist/global.d.ts; fi
+        shell: bash
 
       - name: Publish to GitHub Packages
         env:
