@@ -1,4 +1,4 @@
-name: Publish to NPM
+name: Publish to GitHub Packages
 
 on:
   push:
@@ -9,16 +9,28 @@ on:
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
+
     steps:
+      - name: Checkout Repository
         uses: actions/checkout@v4
+
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          registry-url: "https://npm.pkg.github.com"
-          scope: "@alicization-hub"
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@alicization-hub'
+
+      - name: Install Dependencies
         run: npm install
+
+      - name: Run TypeScript Compiler (tsc)
         run: npx tsc
+
+      - name: Copy global.d.ts to dist
         run: cp src/global.d.ts dist/global.d.ts
-        run: npm publish --registry=https://npm.pkg.github.com
+
+      - name: Publish to GitHub Packages
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        run: npm publish --registry=https://npm.pkg.github.com
