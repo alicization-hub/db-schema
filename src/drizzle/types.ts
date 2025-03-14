@@ -1,14 +1,16 @@
-import { schema } from '.'
+import { accounts, profiles } from './schema/accounts.schema'
+import { permissions, roles } from './schema/roles.schema'
+import { genres, titles, tracks, watch } from './schema/spaces.schema'
 
-export type Account = typeof schema.accounts.$inferSelect
-export type Profile = typeof schema.profiles.$inferSelect
-export type Role = typeof schema.roles.$inferSelect
-export type Permission = typeof schema.permissions.$inferSelect
+export type Account = typeof accounts.$inferSelect
+export type Profile = typeof profiles.$inferSelect
+export type Role = typeof roles.$inferSelect
+export type Permission = typeof permissions.$inferSelect
 
-export type Title = typeof schema.titles.$inferSelect
-export type Track = typeof schema.tracks.$inferSelect
-export type Genre = typeof schema.genres.$inferSelect
-export type Watch = typeof schema.watch.$inferSelect
+export type Title = typeof titles.$inferSelect
+export type Track = typeof tracks.$inferSelect
+export type Genre = typeof genres.$inferSelect
+export type Watch = typeof watch.$inferSelect
 
 export type RoleAndPermission = Role & {
   permissions: Omit<Permission, 'roleId'>[]
