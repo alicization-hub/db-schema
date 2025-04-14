@@ -7,14 +7,13 @@ settings:
 importers:
 
   .:
-    dependencies:
-      drizzle-orm:
-        specifier: ^0.41.0
-        version: 0.41.0
     devDependencies:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: ^4.4.1
         version: 4.4.1(prettier@3.5.3)
+      drizzle-orm:
+        specifier: ^0.41.0
+        version: 0.41.0
       prettier:
         specifier: ^3.5.3
         version: 3.5.3
