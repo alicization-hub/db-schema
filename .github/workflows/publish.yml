@@ -29,7 +29,7 @@ jobs:
 
       - name: Copy global.d.ts to dist
         run: |
-          if [ "$RUNNER_OS" == "Windows" ]; then copy src\global.d.ts dist\global.d.ts; else cp src/global.d.ts dist/global.d.ts; fi
+          if ["$RUNNER_OS" == "Windows"]; then copy src\global.d.ts dist\global.d.ts; else cp src/global.d.ts dist/global.d.ts; fi
         shell: bash
 
       - name: Publish to GitHub Packages

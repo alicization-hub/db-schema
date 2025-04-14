@@ -7,5 +7,3 @@ export const schema = Object.freeze({
   ...roles,
   ...spaces
 })
-
-export { withPagination } from './utils'
