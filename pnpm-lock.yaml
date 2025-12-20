@@ -12,8 +12,8 @@ importers:
         specifier: ^4.4.1
         version: 4.4.1(prettier@3.5.3)
       drizzle-orm:
-        specifier: ^0.41.0
-        version: 0.41.0
+        specifier: ^0.43.1
+        version: 0.43.1
       prettier:
         specifier: ^3.5.3
         version: 3.5.3
@@ -92,8 +92,8 @@ packages:
       supports-color:
         optional: true
 
-  drizzle-orm@0.41.0:
-    resolution: {integrity: sha512-7A4ZxhHk9gdlXmTdPj/lREtP+3u8KvZ4yEN6MYVxBzZGex5Wtdc+CWSbu7btgF6TB0N+MNPrvW7RKBbxJchs/Q==}
+  drizzle-orm@0.43.1:
+    resolution: {integrity: sha512-dUcDaZtE/zN4RV/xqGrVSMpnEczxd5cIaoDeor7Zst9wOe/HzC/7eAaulywWGYXdDEc9oBPMjayVEDg0ziTLJA==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
       '@cloudflare/workers-types': '>=4'
@@ -103,7 +103,7 @@ packages:
       '@neondatabase/serverless': '>=0.10.0'
       '@op-engineering/op-sqlite': '>=2'
       '@opentelemetry/api': ^1.4.1
-      '@planetscale/database': '>=1'
+      '@planetscale/database': '>=1.13'
       '@prisma/client': '*'
       '@tidbcloud/serverless': '*'
       '@types/better-sqlite3': '*'
@@ -293,7 +293,7 @@ snapshots:
     dependencies:
       ms: 2.1.3
 
-  drizzle-orm@0.41.0: {}
+  drizzle-orm@0.43.1: {}
 
   globals@11.12.0: {}
 
